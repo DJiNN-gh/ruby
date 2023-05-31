@@ -5,14 +5,14 @@ class Pessoa
     #Aqui sao definidos os valores que irao pertencer a classe
     def initialize (id, nome)
         
-        #As variaveis de classe recebem o @ no seu comeco, tem o seu tipo subentendido pelo compilador e devem der inicializadas com os parametros de definicao
+        #As variáveis de classe recebem o caractere @ no seu começo, e tem o seu tipo subentendido pelo compilador e devem ser inicializadas com parâmetros de definição
         @id_pessoa=id
         @nome_pessoa=nome
     end
-    #Criamos uma funcao para imprimir na tela o conteudo de classe
+    #Criamos um método para imprimir na tela o conteúdo de classe
     def imprime_na_tela()
 
-        #A chamada de uma variavel de classe e feita com a utilizacao do #
+        #A chamada de uma variável de classe e feita com a utilização do caractere #
         puts "#@id_pessoa", "#@nome_pessoa"
     end
 end
@@ -20,5 +20,5 @@ end
 #Atribuicao de valores as variaveis da classe
 func1_Pessoa=Pessoa.new(1, "Allan Lopes")
 
-#Chamada do metodo usado para imprimir a informacao na tela
+#Chamada do método usado para imprimir o conteúdo na tela
 func1_Pessoa.imprime_na_tela()
