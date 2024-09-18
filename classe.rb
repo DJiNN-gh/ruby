@@ -1,24 +1,26 @@
-#Este programa se propoe a realizar o teste de declaracao de variaveis/classes e imprimi-las na tela
+# Este programa se propoe a realizar o teste de declaracao de variaveis/classes e imprimi-las na tela, utilizando a linguagem Ruby
 
-#A definicao de classe inicia-se com a chamada 'class' e o nome da clase iniciado em maiusculo
+# A definicao de classe se inicia com a chamada 'class' e o nome da clase, sempre iniciado em maiusculo
 class Pessoa
-    #Aqui sao definidos os valores que irao pertencer a classe
+
+    # Aqui sao definidos os valores que irao pertencer a classe
     def initialize (id, nome)
         
-        #As variáveis de classe recebem o caractere @ no seu começo, e tem o seu tipo subentendido pelo compilador e devem ser inicializadas com parâmetros de definição
+        # As variaveis de classe recebem o caractere @ no seu comeco, e tem o seu tipo subentendido pelo compilador e devem ser inicializadas com parametros de definicao
         @id_pessoa=id
         @nome_pessoa=nome
     end
-    #Criamos um método para imprimir na tela o conteúdo de classe
+    
+    # Criacao de um metodo para imprimir na tela o conteudo de classe
     def imprime_na_tela()
 
-        #A chamada de uma variável de classe e feita com a utilização do caractere #
+        # A chamada de uma variavel de classe e feita com a utilizacao do caractere #
         puts "#@id_pessoa", "#@nome_pessoa"
     end
 end
 
-#Atribuicao de valores as variaveis da classe
+# Atribuicao de valores as variaveis da classe
 func1_Pessoa=Pessoa.new(1, "Allan Lopes")
 
-#Chamada do método usado para imprimir o conteúdo na tela
+# Chamada do metodo usado para imprimir o conteudo na tela
 func1_Pessoa.imprime_na_tela()
